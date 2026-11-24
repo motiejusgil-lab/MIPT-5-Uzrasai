@@ -2,14 +2,6 @@
 
 „Užrašai“ yra mokomoji „Android“ užrašų programėlė (5 praktikos darbas), skirta patogiam asmeninių užrašų kūrimui, peržiūrai, redagavimui ir tvarkymui viename įrenginyje be interneto ryšio ar debesies paslaugų.
 
-## Ekrano vaizdai
-
-<p>
-  <img src="docs/images/01-main-lt.png" width="260" alt="Pagrindinis užrašų sąrašo ekranas, kai sąrašas tuščias" />
-  <img src="docs/images/02-notes-lt.png" width="260" alt="Užrašų sąrašo ekranas su išsaugotais užrašais" />
-  <img src="docs/images/03-editor-lt.png" width="260" alt="Užrašo peržiūros ir redagavimo ekranas" />
-</p>
-
 ## Funkcijos ir naudojimas
 
 Programėlę sudaro du pagrindiniai ekranai: **užrašų sąrašas** ir **užrašo peržiūra / redagavimas**.
@@ -59,57 +51,3 @@ Programėlė palaiko **lietuvių** ir **anglų** kalbas:
 1. Atidarykite šakninį projekto aplanką programoje **Android Studio**.
 2. Palaukite arba paleiskite **Gradle Sync**, kad būtų paruoštos priklausomybės.
 3. Pasirinkite prijungtą fizinį „Android“ įrenginį arba emuliatorių ir paspauskite **Run**.
-
-### APK surinkimas iš komandinės eilutės
-Derinimo (*debug*) versijos diegimo paketas (`app/build/outputs/apk/debug/app-debug.apk`) sukuriamas komandomis:
-
-- **Windows:**
-  ```powershell
-  .\gradlew.bat assembleDebug
-  ```
-- **Linux / macOS:**
-  ```bash
-  ./gradlew assembleDebug
-  ```
-
----
-
-## Patikra ir dokumentacija
-
-### Testai ir kodo analizė (*Lint*)
-Vienetų testams ir statinei kodo analizei paleisti naudokite:
-
-- **Windows:**
-  ```powershell
-  .\gradlew.bat testDebugUnitTest lintDebug
-  ```
-- **Linux / macOS:**
-  ```bash
-  ./gradlew testDebugUnitTest lintDebug
-  ```
-
-Instrumentiniams testams (būtinas prijungtas „Android“ įrenginys arba paleistas emuliatorius):
-
-- **Windows:**
-  ```powershell
-  .\gradlew.bat connectedDebugAndroidTest
-  ```
-- **Linux / macOS:**
-  ```bash
-  ./gradlew connectedDebugAndroidTest
-  ```
-
-### Papildomi projekto dokumentai
-- Kodo peržiūros pastabos ir du svarbiausi įgyvendinti pakeitimai aprašyti dokumente [`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md).
-- Galutinės projekto patikros suvestinė bus išsaugota faile [`docs/verification/summary.json`](docs/verification/summary.json).
-
-## Patikros rezultatai
-
-Galutinė patikra atlikta **2026-11-24**:
-
-- `assembleDebug`: surinkimas sėkmingas.
-- `testDebugUnitTest`: **23** testai (0 nesėkmių, 0 klaidų, 0 praleistų).
-- `connectedDebugAndroidTest` (`Pixel_6` / Android 14 emuliatoriuje): **3** testai (0 nesėkmių, 0 klaidų, 0 praleistų).
-- `lintDebug`: **0** klaidų ir **20** įspėjimų.
-
-Testai apima CRUD operacijas, pakartotinį JSON atnaujinimą, UTF-8 koduotę, sinchronizavimo konfliktus ir ištrynimus, nepavykusį rašymą bei ekrano pasukimą vykstant išsaugojimui, trynimui ar sinchronizavimui. Faktiniai JUnit XML ir `lint` ataskaitos failai saugomi `docs/verification/`, o galutinė suvestinė – faile [`docs/verification/summary.json`](docs/verification/summary.json).
