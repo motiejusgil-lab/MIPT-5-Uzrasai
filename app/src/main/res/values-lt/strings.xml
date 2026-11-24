@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MIPT 5 Užrašai</string>
+
+    <!-- Main screen -->
+    <string name="main_title">Užrašai</string>
+    <string name="main_subtitle">5 praktikos darbas • Vietinė saugykla</string>
+    <string name="storage_section_label">Aktyvi saugykla</string>
+    <string name="storage_sqlite">SQLite</string>
+    <string name="storage_json">JSON failas</string>
+    <string name="storage_status_format">Rodoma užrašų: %1$d (%2$s)</string>
+    <string name="storage_status_one_format">Rodomas 1 užrašas (%1$s)</string>
+    <string name="action_sync">Sinchronizuoti saugyklas</string>
+    <string name="action_new_note">+ Naujas užrašas</string>
+    <string name="empty_notes_title">Šioje saugykloje užrašų nėra</string>
+    <string name="empty_notes_hint">Paspauskite „+ Naujas užrašas“ apačioje arba perjunkite / sinchronizuokite saugyklas.</string>
+    <string name="updated_at_format">Atnaujinta: %1$s</string>
+
+    <!-- Editor screen -->
+    <string name="editor_title_new">Naujas užrašas</string>
+    <string name="editor_title_edit">Užrašo peržiūra ir redagavimas</string>
+    <string name="editor_storage_chip_format">Saugykla: %1$s</string>
+    <string name="label_note_title">Pavadinimas</string>
+    <string name="hint_note_title">Įveskite užrašo pavadinimą</string>
+    <string name="label_note_content">Turinys</string>
+    <string name="hint_note_content">Įrašykite užrašo tekstą</string>
+    <string name="action_save">Išsaugoti</string>
+    <string name="action_delete">Ištrinti</string>
+    <string name="action_back">Atgal</string>
+
+    <!-- Validation -->
+    <string name="error_title_required">Pavadinimas yra privalomas ir negali būti sudarytas vien iš tarpų.</string>
+    <string name="error_content_required">Turinys yra privalomas ir negali būti sudarytas vien iš tarpų.</string>
+
+    <!-- Dialogs & feedback -->
+    <string name="dialog_delete_title">Ištrinti užrašą?</string>
+    <string name="dialog_delete_message">Užrašas bus pašalintas iš aktyvios saugyklos ir pažymėtas kaip ištrintas būsimam sinchronizavimui.</string>
+    <string name="dialog_discard_title">Neišsaugoti pakeitimai</string>
+    <string name="dialog_discard_message">Turite neišsaugotų juodraščio pakeitimų. Ar tikrai norite juos atmesti ir išeiti?</string>
+    <string name="action_cancel">Atšaukti</string>
+    <string name="action_stay">Likti</string>
+    <string name="action_discard">Atmesti</string>
+    <string name="action_ok">Gerai</string>
+
+    <string name="msg_note_saved">Užrašas išsaugotas.</string>
+    <string name="msg_note_deleted">Užrašas ištrintas.</string>
+    <string name="msg_sync_success_format">Sinchronizacija baigta. Aktyvių užrašų: %1$d.</string>
+
+    <!-- Errors -->
+    <string name="error_dialog_title">Saugyklos klaida</string>
+    <string name="error_corrupted_json">JSON saugyklos failas yra sugadintas ir negali būti nuskaitytas. Esamas failas liko nepakeistas, kad neprarastumėte duomenų.</string>
+    <string name="error_io">Nepavyko nuskaityti arba įrašyti vietinio saugyklos failo.</string>
+    <string name="error_database">Nepavyko pasiekti SQLite duomenų bazės.</string>
+    <string name="error_note_not_found">Pasirinkto užrašo šioje saugykloje nepavyko rasti.</string>
+</resources>

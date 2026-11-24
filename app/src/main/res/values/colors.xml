@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_primary">#6D28D9</color>
+    <color name="purple_primary_dark">#5B21B6</color>
+    <color name="purple_primary_pressed">#4C1D95</color>
+    <color name="purple_soft">#EDE9FE</color>
+    <color name="purple_soft_pressed">#DDD6FE</color>
+    <color name="purple_border">#C4B5FD</color>
+
+    <color name="bg_screen">#F7F5FB</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="border_subtle">#E4DFF0</color>
+    <color name="disabled_surface">#E5E1EE</color>
+    <color name="disabled_text">#8E88A3</color>
+
+    <color name="text_primary">#1E1B2E</color>
+    <color name="text_secondary">#5E5873</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <color name="danger_primary">#B91C1C</color>
+    <color name="danger_soft">#FEE2E2</color>
+    <color name="danger_soft_pressed">#FECACA</color>
+    <color name="danger_border">#FCA5A5</color>
+</resources>

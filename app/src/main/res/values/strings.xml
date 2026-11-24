@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MIPT 5 Notes</string>
+
+    <!-- Main screen -->
+    <string name="main_title">Notes</string>
+    <string name="main_subtitle">Practical work 5 • Local storage</string>
+    <string name="storage_section_label">Active storage</string>
+    <string name="storage_sqlite">SQLite</string>
+    <string name="storage_json">JSON file</string>
+    <string name="storage_status_format">Showing %1$d notes from %2$s</string>
+    <string name="storage_status_one_format">Showing 1 note from %1$s</string>
+    <string name="action_sync">Sync storages</string>
+    <string name="action_new_note">+ New note</string>
+    <string name="empty_notes_title">No notes in this storage</string>
+    <string name="empty_notes_hint">Tap "+ New note" below to create a note, or switch/sync storages.</string>
+    <string name="updated_at_format">Updated: %1$s</string>
+
+    <!-- Editor screen -->
+    <string name="editor_title_new">New note</string>
+    <string name="editor_title_edit">View &amp; edit note</string>
+    <string name="editor_storage_chip_format">Storage: %1$s</string>
+    <string name="label_note_title">Title</string>
+    <string name="hint_note_title">Enter note title</string>
+    <string name="label_note_content">Content</string>
+    <string name="hint_note_content">Write your note here</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_back">Back</string>
+
+    <!-- Validation -->
+    <string name="error_title_required">Title is required and cannot consist only of spaces.</string>
+    <string name="error_content_required">Content is required and cannot consist only of spaces.</string>
+
+    <!-- Dialogs & feedback -->
+    <string name="dialog_delete_title">Delete note?</string>
+    <string name="dialog_delete_message">This note will be removed from the active storage and marked as deleted for future synchronization.</string>
+    <string name="dialog_discard_title">Unsaved changes</string>
+    <string name="dialog_discard_message">You have unsaved changes in your draft. Discard them and leave?</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_stay">Stay</string>
+    <string name="action_discard">Discard</string>
+    <string name="action_ok">OK</string>
+
+    <string name="msg_note_saved">Note saved.</string>
+    <string name="msg_note_deleted">Note deleted.</string>
+    <string name="msg_sync_success_format">Sync complete. Total active notes: %1$d.</string>
+
+    <!-- Errors -->
+    <string name="error_dialog_title">Storage error</string>
+    <string name="error_corrupted_json">The JSON storage file is corrupted and could not be parsed. Your existing file was kept intact so no data is lost.</string>
+    <string name="error_io">Could not read or write the local storage file.</string>
+    <string name="error_database">Could not access the SQLite database.</string>
+    <string name="error_note_not_found">The selected note could not be found in this storage.</string>
+</resources>
